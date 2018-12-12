@@ -3,9 +3,14 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Login
-    </ion-title>
+    <ion-segment [(ngModel)]="icons" color="secondary">
+        <ion-segment-button value="contact">
+          <ion-icon name="contact"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="person-add">
+          <ion-icon name="person-add"></ion-icon>
+        </ion-segment-button>
+      </ion-segment>
   </ion-toolbar>
 </ion-header>
 
